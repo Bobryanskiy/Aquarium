@@ -7,14 +7,17 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "main.cpp",
+                "vectors.c",
+                "aquarium.c",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/main",
                 "-lsfml-graphics",
                 "-lsfml-window",
                 "-lsfml-system",
                 "-lsfml-audio",
                 "-lstdc++",
+                "-lm"
             ],
             "options": {
                 "cwd": "${fileDirname}"
